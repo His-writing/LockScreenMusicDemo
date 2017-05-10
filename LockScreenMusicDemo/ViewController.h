@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)clickPlay:(id)sender;
 
 @end
 

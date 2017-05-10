@@ -15,6 +15,10 @@
 		F06F8F941E84A6ED00184AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06F8F921E84A6ED00184AFC /* LaunchScreen.storyboard */; };
 		F06F8F9F1E84A6ED00184AFC /* LockScreenMusicDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06F8F9E1E84A6ED00184AFC /* LockScreenMusicDemoTests.m */; };
 		F06F8FAA1E84A6ED00184AFC /* LockScreenMusicDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06F8FA91E84A6ED00184AFC /* LockScreenMusicDemoUITests.m */; };
+		F06F8FB91E84A6FB00184AFC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06F8FB81E84A6FB00184AFC /* MediaPlayer.framework */; };
+		F06F8FBB1E84A70100184AFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06F8FBA1E84A70100184AFC /* AVFoundation.framework */; };
+		F06F8FBD1E84A70B00184AFC /* 那些花儿.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F06F8FBC1E84A70B00184AFC /* 那些花儿.mp3 */; };
+		F06F8FBF1E84A71600184AFC /* pushu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F06F8FBE1E84A71600184AFC /* pushu.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		F06F8FA51E84A6ED00184AFC /* LockScreenMusicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockScreenMusicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06F8FA91E84A6ED00184AFC /* LockScreenMusicDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LockScreenMusicDemoUITests.m; sourceTree = "<group>"; };
 		F06F8FAB1E84A6ED00184AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06F8FB81E84A6FB00184AFC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F06F8FBA1E84A70100184AFC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F06F8FBC1E84A70B00184AFC /* 那些花儿.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "那些花儿.mp3"; sourceTree = "<group>"; };
+		F06F8FBE1E84A71600184AFC /* pushu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pushu.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06F8FBB1E84A70100184AFC /* AVFoundation.framework in Frameworks */,
+				F06F8FB91E84A6FB00184AFC /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,7 @@
 				F06F8F9D1E84A6ED00184AFC /* LockScreenMusicDemoTests */,
 				F06F8FA81E84A6ED00184AFC /* LockScreenMusicDemoUITests */,
 				F06F8F821E84A6ED00184AFC /* Products */,
+				F06F8FB71E84A6FB00184AFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +112,8 @@
 		F06F8F831E84A6ED00184AFC /* LockScreenMusicDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F06F8FBE1E84A71600184AFC /* pushu.jpg */,
+				F06F8FBC1E84A70B00184AFC /* 那些花儿.mp3 */,
 				F06F8F871E84A6ED00184AFC /* AppDelegate.h */,
 				F06F8F881E84A6ED00184AFC /* AppDelegate.m */,
 				F06F8F8A1E84A6ED00184AFC /* ViewController.h */,
@@ -138,6 +151,15 @@
 				F06F8FAB1E84A6ED00184AFC /* Info.plist */,
 			);
 			path = LockScreenMusicDemoUITests;
+			sourceTree = "<group>";
+		};
+		F06F8FB71E84A6FB00184AFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06F8FBA1E84A70100184AFC /* AVFoundation.framework */,
+				F06F8FB81E84A6FB00184AFC /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +231,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 45DWXJGCKQ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F06F8F991E84A6ED00184AFC = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -249,9 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06F8FBD1E84A70B00184AFC /* 那些花儿.mp3 in Resources */,
 				F06F8F941E84A6ED00184AFC /* LaunchScreen.storyboard in Resources */,
 				F06F8F911E84A6ED00184AFC /* Assets.xcassets in Resources */,
 				F06F8F8F1E84A6ED00184AFC /* Main.storyboard in Resources */,
+				F06F8FBF1E84A71600184AFC /* pushu.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -415,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45DWXJGCKQ;
 				INFOPLIST_FILE = LockScreenMusicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nightMode.LockScreenMusicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 45DWXJGCKQ;
 				INFOPLIST_FILE = LockScreenMusicDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nightMode.LockScreenMusicDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
